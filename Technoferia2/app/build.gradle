@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "mine.calender.com.example.shivangi.technoferia"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 2
+        versionName "1.1"
+        renderscriptTargetApi 22
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.github.bluejamesbond:textjustify-android:2.1.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:cardview-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'com.github.goka.blurredgridmenu:blurredgridmenu:1.0.2'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.pushbots:pushbots-lib:2.0.13@aar'
+}

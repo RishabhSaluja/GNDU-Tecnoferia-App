@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/position"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:text="the page number is 1">
+
+</TextView>
